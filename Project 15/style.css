@@ -49,64 +49,68 @@ background-color: #171717;
 /*Navbar*/
 
 
-nav{/*
-   height: 50px;
-   width: 1520px;*/
-   height: 25%;
-   width: 100%;
-    background-color: #222222;
-    opacity: 0.9;
-   position: relative;
-   display: grid;
- 
- 
+nav {
+  height: 25%;
+  width: 100%;
+  background-color: #222222;
+  opacity: 0.9;
+  position: relative;
 }
 
-nav .navlink{
-    position: relative;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-    float: right;
-    padding-top: 5px;
-    margin-top: 4px;
-    margin-right: 50px;
-
-   
-
-}
-nav .navlink a{
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'JetBrains Mono', monospace;
-    display: flex;
-
-}
-
-nav .navlink a:hover{
-    color: gray;
-    transition: 0.4s;
-}
-
-.logo img{
+.logo img {
   left: 5px;
   position: relative;
-  width: 40px;
+  width: 3%;
   height: 40px;
 
 }
 
 
+nav .navlink {
+  position: relative;
+  text-align: center;
+  width: 20%;
+  height: 30px;
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  right: 20px;
+}
 
+nav .navlink a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: 10%;
+
+}
+
+nav .navlink a:hover {
+  color: gray;
+  transition: 0.4s;
+}
+
+
+
+.container{
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Part One  */
 
 
 .one{
     position: relative;
-    width: 450px;
+    width: 50%;
     height: 200px;
-    top: 180px;
+    top: 110px;
     left: 20px;
     padding-top: 100px;
     padding-left: 30px;
@@ -140,132 +144,56 @@ nav .navlink a:hover{
 
 .img {
 position: relative;
-width: 500px;
-height: 500px;
-left: 790px;
+width: 31%;
+height: 400px;
+left: 65%;
 bottom: 10px;
 border-radius: 20px 20px 40px;
 display: flex;
-flex-direction: column;
+
 }
 
 .img img{
   border-radius: 20px;
-  position: absolute;
-  width: 400px;
-  height: 400px;
+  position: relative;
+  width: 100%;
+  height: 100%;
   box-shadow: #545454 5px 4px 5px;
-  display:flex;
-  flex-wrap: wrap;
   bottom: 90px;
 }
-
-/*
-.imgrgb{
- box-shadow: 5px 5px 5px black;
-  border-radius: 20px;
-position: absolute;
-width: 410px;
-height: 410px;
-left: 845px;
-top: 205px;
-overflow: hidden;
-z-index: -1;
-background-color:#222222;
-}
-
-.imgrgb::before{
-content: "";
-position: absolute;
-background: conic-gradient( 
-  red,
-  grey
-);
-height: 120%;
-width: 120%;
-animation: spin 10s infinite linear;
-}
-
-
-@keyframes spin{
-  100%{
-    transform: rotate(360deg);
-  }
-}*/
-
-
-
-
-
-
-
-
-
 
 
 /*Part Two  */
 
 
 
-
-/*
-.yamuk{
-   display:grid;
-    position: relative;
-    margin-left: 20px;
-    margin-top: 60px;
-    width:700px;
-    height: 440px;
-    transform: skew(20deg);
-    background-color: #222222;
-    z-index: 1;
-    left: 75px;
-  
-  }
-  */
   #school_img{
-   border-radius: 20px;
-   margin-top:100px;
-   margin-left: 50px;
+    border-radius: 20px;
+    margin-left: 50px;
     height: 450px;
-    width: 550px;
+    width: 35%;
     position: relative;
     box-shadow: 5px 5px 5px #545454;
   }
-/*
-  .yamuk2{
-    display: grid;
-    position: relative;
-    margin-left: 724px;
-    bottom: 440px;
-    width:700px;
-    height: 440px;
-    transform: skew(-20deg);
-    background-color: #434242;
-    z-index: -1;
 
-
-
-  }*/
 
   .text{
+    position: relative;
     border-radius: 40px;
     box-shadow: 5px 5px 5px #545454;
-    width: 600px;
+    width: 45%;
     height: 200px;
-    left:690px;
+    margin-left: 55%;
     bottom: 350px;
-    position: relative;
+    display: flex;
   }
   .text p{
     color: #F0EEED;
-   padding: 40px;
-   word-wrap: 20px;
-   font-size:medium ;
-   font-family: 'JetBrains Mono', monospace;
-      position: relative;
+    padding: 40px;
+    word-wrap: 20px;
+    font-size:medium ;
+    font-family: 'JetBrains Mono', monospace;
     text-shadow: 2px 2px 2px gray;
-    
   }
 
 
@@ -274,13 +202,12 @@ animation: spin 10s infinite linear;
 
   .text2{
     border-radius: 40px;
-    width: 600px;
+    width: 45%;
     height: 400px;
     position: relative;
-    margin-top: 10px;
-    top: 80px;
+    margin-top:60px;
     left: 20px;
-    margin-bottom: 400px;
+    display: flex;
     box-shadow: 5px 5px 5px #545454;
   }
   .text2 p{
@@ -289,90 +216,43 @@ animation: spin 10s infinite linear;
     padding: 50px;
     word-wrap: 20px;
     font-family: 'JetBrains Mono', monospace;
-     position: relative;
      text-shadow: 2px 2px 2px #545454;
   }
 
-
+  .img2{
+    position: relative;
+    width: 31%;
+    height: 400px;
+    left: 60%;
+    border-radius: 20px 20px 40px;
+    display: flex;
+    bottom: 400px;
+  }
 
   .img2 img{
-  border-radius: 20px;
-   left: 780px;
-   bottom: 735px;
-    height: 450px;
-    width: 550px;
-    position: relative;
-    box-shadow: 5px 5px 5px #545454;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: #545454 5px 4px 5px;
   }
 
 
-/* Buttons  
-
-.links a i{    
-                
-  position: relative;    
-  left: 50px;    
-  color: #CFB997;   
-  opacity: 0.9; 
-  margin-left: 20px  ;
-  left: 570px;
-  margin-bottom: 150px;
-
- }  
-
-.links a i:hover{     
-
- transform: scale(1.09);  
- transition: 0.3s;     
-  color: #4C6793;           
- }
- 
- 
- 
- 
- 
- 
- <div class="links">                  
-  <a target="_blank"  href="https://www.instagram.com/anilkayanda/">
-   <i class="fa-brands fa-square-instagram fa-4x"></i> </a>           
-   
-   
- <a target="_blank" href="https://www.linkedin.com/in/an%C4%B1l-kayanda-046ab4240/"><i class="fa-brands fa-linkedin fa-4x"></i><a>           
-
-     <a target="_blank" href="https://github.com/AnilKayanda"> 
-       <i class="fa-brands fa-github fa-4x"></i> </a>    
-
-         <a target="_blank" href="mailto:anilkayanda@gmail.com">
-           <i class="fa-solid fa-envelope fa-4x"></i>
-         </a>  </div> 
- 
- 
- 
- 
- 
- 
- 
- */
-
  .btn{
   border: solid;
-  width: 150px;
+  width: 13%;
   height: 50px;
   padding-top: 10px;
+  margin-top: 100px;
   position: relative;
   background-color: #000000;
-  left: 400px;
-  bottom: 320px;
+  left: 30%;
   border-radius: 40px;
   text-align: center;
-
- 
 
  }
  .btn a{
   text-decoration: none;
   color: whitesmoke;
- 
  }
 
 .btn:hover{
@@ -382,86 +262,16 @@ transition: 0.5s;
 
 
 
- .btn2{
-  border: solid;
-  width: 150px;
-  height: 50px;
-  padding-top: 10px;
-  position: relative;
-  background-color: #000000;
-  margin-left: 600px;
-  bottom: 369px;
-  border-radius: 40px;
-  text-align: center;
-  
- 
-
- }
- .btn2 a{
-  text-decoration: none;
-  color: whitesmoke;
- 
- }
- 
- .btn2:hover{
-  background-color: rgb(34, 33, 33);
-  transition: 0.5s;
-  
-  }
-
- .btn3{
-  border: solid;
-  width: 150px;
-  height: 50px;
-  padding-top: 10px;
-  position: relative;
-  background-color: #000000;
-  margin-left: 800px;
-  bottom: 420px;
-  border-radius: 40px;
-  text-align: center;
-  
- 
-
- }
- .btn3 a{
-  text-decoration: none;
-  color: whitesmoke;
- 
- }
-
- .btn3:hover{
-  background-color: rgb(34, 33, 33);
-  transition: 0.5s;
-  
-  }
-
-
-
-
-
-
-
-
-
-
-
 
   /*   Footer   */
 
 
-
-
-
-.footer{
+footer{
 position:relative;
-bottom: 0;
-right: 200px;
-width: 1605px;
-height: 400px;
+width: 100%;
+height: 200px;
+margin-top: 200px;
 background-color:#434242;
-display:flex;
-
 }
 
 

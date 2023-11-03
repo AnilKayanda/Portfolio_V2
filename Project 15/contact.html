@@ -21,33 +21,43 @@
             background-color: #171717;
         }
 
-        nav {
 
-            height: 50px;
-            width: 1535px;
+
+        nav {
+            height: 25%;
+            width: 100%;
             background-color: #222222;
-            ;
             opacity: 0.9;
-            display: flex;
+            position: relative;
+        }
+
+        .logo img {
+            left: 5px;
+            position: relative;
+            width: 3%;
+            height: 40px;
 
         }
+
 
         nav .navlink {
             position: relative;
             text-align: center;
-            display: flex;
-            width: 100px;
+            width: 20%;
             height: 30px;
+            display: flex;
+            float: right;
+            justify-content: center;
             align-items: center;
-            margin-left: 60px;
-            top: 10px;
+            bottom: 40px;
+            right: 20px;
         }
 
         nav .navlink a {
             text-decoration: none;
             color: aliceblue;
             font-family: 'JetBrains Mono', monospace;
-            display: flex;
+            margin-left: 10%;
 
         }
 
@@ -56,38 +66,30 @@
             transition: 0.4s;
         }
 
-        .logo img {
-            left: 5px;
-            position: relative;
-            width: 40px;
-            height: 40px;
-        }
 
 
+        /* Links */
 
         .links {
+            position: relative;
             border-style: solid;
-            width: 500px;
-            max-width: 96%;
-            height: 100px;
-            padding-top: 15px;
-            position: fixed;
-            bottom: 49%;
+            width: 30%;
+            height: 80px;
+            top: 200px;
             left: 34%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
             border-radius: 60px;
             box-shadow: 10px 15px 30px 15px black;
             background-color: #313131;
         }
 
         .links a i {
-
             position: relative;
-            left: 50px;
+            margin-left: 20px;
             color: #CFB997;
             opacity: 0.9;
-            margin-left: 20px;
-            left: 80px;
-
         }
 
         .links a i:hover {
@@ -99,9 +101,11 @@
     </style>
     <nav>
         <div class="logo"> <img src="img/nice-avatar.png" alt=""></div>
-        <div class="navlink"><a href="index.html">Main</a></div>
-        <div class="navlink"> <a href="contact.html">Contact Me</a></div>
-        <div class="navlink"> <a href="">Projects</a></div>
+        <div class="navlink">
+            <a href="index.html">Main</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="#">Projects</a>
+        </div>
     </nav>
 </head>
 
